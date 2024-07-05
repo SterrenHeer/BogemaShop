@@ -1,3 +1,27 @@
+.title {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000;
+	&_14 {
+		font-size: 14px;
+	}
+	&_20 {
+		font-size: 20px;
+	}
+	&_24 {
+		font-size: 24px;
+	}
+	&_32 {
+		font-size: 32px;
+	}
+	&_36 {
+		font-size: 36px;
+	}
+	&_40 {
+		font-size: 40px;
+	}
+}
+
 .extra-light {
 	font-weight: 275;
 }
