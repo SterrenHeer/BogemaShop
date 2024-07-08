@@ -1,0 +1,47 @@
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.footer {
+        margin-top: 55px;
+        padding-bottom: 19px;
+        &_instagram {
+            flex-wrap: wrap;
+            img {
+                width: 50%;
+            }
+        }
+        &_wrapper {
+            flex-direction: column;
+            gap: 27px;
+        }
+        &_logo {
+            font-size: 24px;
+        }
+        &_target, &_address {
+            gap: 11px;
+            * {
+                font-size: 12px;
+            }
+        }
+        &_address a:last-child {
+            margin-top: -5px;
+        }
+        &_target {
+            margin-top: 48px;
+            font-size: 14px;
+        }
+        &_developer {
+            justify-content: start;
+        }
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}
