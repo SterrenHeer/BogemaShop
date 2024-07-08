@@ -1,0 +1,77 @@
+.footer {
+    margin-top: 70px;
+    padding-bottom: 20px;
+    background: #363636;
+    &_instagram {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 16.66%;
+        }
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            flex-direction: column;
+            font-weight: 300;
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.77);
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+    }
+    &_logo, &_address, &_links, &_target {
+        display: flex;
+        align-items: start;
+        flex-shrink: 0;
+    }
+    &_logo {
+        font-weight: 500;
+        font-size: 48px;
+        color: #fcc2d1;
+    }
+    &_links, &_target, &_address {
+        flex-direction: column;
+    }
+    &_links {
+        gap: 20px;
+        a {
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+                color: #fcc2d1;
+            }
+        }
+    }
+    &_target, &_address {
+        gap: 11px;
+        * {
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &_developer {
+        display: flex;
+        justify-content: end;
+    }
+    &_bottom {
+        margin-top: 37px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+    }
+    .title {
+        color: #fff;
+    }
+}

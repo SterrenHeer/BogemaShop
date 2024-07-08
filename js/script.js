@@ -9,3 +9,6 @@ $.get('header.html',function(response){
         $('.burger_dropdown :checked').prop('checked', false);
     });
 });
+$.get('footer.html',function(response){ 
+    $('.footer').html(response); 
+});
