@@ -1,0 +1,173 @@
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1300px) {
+    .header {
+        &_social {
+            gap: 15px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .header {
+        &_logo {
+            .title {
+                font-size: 28px;
+            }
+        }
+        &_menu {
+            .title {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+	.header {
+        &_upper {
+            height: 60px;
+        }
+        &_logo {
+            .title {
+                font-size: 24px;
+            }
+        }
+        &_menu, &_social {
+            display: none;
+        }
+    }
+    .burger {
+        position: fixed;
+        z-index: 14;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        &_modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            padding: 32px 15px;
+            width: calc(100vw - 30px);
+            max-height: calc(100vh - 64px);
+            background: #363636;
+        }
+        &_close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 5;
+            height: 15px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_menu {
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+            margin-top: 24px;
+            list-style: none;
+        }
+        &_dropdown {
+            position: relative;
+            & > label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            & > ul {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 19px 11px;
+                list-style: none;
+            }
+            & > .internal {
+                gap: 20px;
+                padding: 19px 11px 19px 59px;
+                min-width: auto;
+            }
+            & :checked ~ ul {
+                display: flex;
+            }
+            & :checked ~ label img {
+                transform: rotate(180deg);
+            }
+            & :checked ~ label {
+                color: #fcc2d1;
+            }
+            img {
+                transition: all 0.8s;
+            }
+            input, & > ul {
+                display: none;
+            }
+            label {
+                cursor: pointer;
+            }
+        }
+        &_button {
+            display: block;
+            cursor: pointer;
+        }
+        &_search {
+            position: relative;
+            margin-top: 10px;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 11px;
+                transform: translate(0, -50%);
+                height: 31px;
+            }
+            input {
+                padding: 0 11px 0 50px;
+                width: calc(100% - 61px);
+                height: 47px;
+                border: 1px solid #fcc2d1;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.42);
+            }
+        }
+        &_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            * {
+                font-weight: 600;
+                font-size: 14px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .title, input {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .title_40 {
+            font-size: 36px;
+            font-weight: 400;
+            color: #fcc2d1;
+        }
+        &_dropdown ul .title {
+            font-weight: 300;
+        }
+        .divider {
+            margin: 34px 0 23px 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 50px;
+            background: #fcc2d1;
+        }
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}

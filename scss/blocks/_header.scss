@@ -47,3 +47,9 @@
         }
     }
 }
+.burger {
+    display: none;
+    &_button {
+        display: none;
+    }
+}
