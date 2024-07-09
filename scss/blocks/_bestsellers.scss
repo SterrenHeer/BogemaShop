@@ -1,0 +1,90 @@
+.bestsellers {
+    padding-top: 70px;
+    &_wrapper {
+        overflow: hidden;
+        margin: 50px 0 0 7px;
+    }
+    &_container {
+        position: relative;
+    }
+    &_field {
+        display: flex;
+    }
+    &_indicators {
+        display: none;
+    }
+    &_slide {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &_wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        &_image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 71.34% 0;
+            width: 100%;
+            cursor: pointer;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &_sizes {
+            position: absolute;
+            bottom: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            height: 51px;
+            background: rgba(54, 54, 54, 0.59);
+            .title {
+                color: #fff;
+            }
+        }
+        &:hover &_sizes {
+            display: flex;
+        }
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+            .title_20 {
+                &:last-child {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    &_prev, &_next {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    &_prev {
+        left: 20px;
+    }
+    &_next {
+        right: 28px;
+    }
+    .rotate {
+        transform: rotate(180deg);
+    }
+    .title_32 {
+        padding-left: 2.92%;
+    }
+}

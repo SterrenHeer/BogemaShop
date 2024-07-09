@@ -6,6 +6,9 @@
 	padding: 0;
 	scroll-behavior: smooth;
 }
+body {
+	background: #f5f7fa;
+}
 .container {
 	max-width: 1163px;
 	width: 83.07%;
@@ -22,6 +25,7 @@ a {
 @import 'blocks/button';
 @import "blocks/header";
 @import "blocks/promo";
+@import "blocks/bestsellers";
 @import "blocks/footer";
 @import "blocks/tabbar";
 @import 'media/general';
