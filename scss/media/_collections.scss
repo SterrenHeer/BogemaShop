@@ -1,0 +1,36 @@
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.collections {
+        padding-top: 50px;
+        &_wrapper {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        &_item {
+            width: 100%;
+            .title_48 {
+                bottom: 23px;
+                font-size: 40px;
+            }
+            &:last-child .title_48 {
+                right: 24px;
+                bottom: 30%;
+            }
+            &:nth-child(2) .title_48 {
+                right: 22px;
+                bottom: 23px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}

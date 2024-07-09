@@ -1,0 +1,38 @@
+.collections {
+    padding-top: 113px;
+    &_wrapper {
+        display: flex;
+        margin-top: 39px;
+    }
+    &_item {
+        position: relative;
+        width: 33.33%;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .title_48 {
+            position: absolute;
+            left: 24px;
+            bottom: 0;
+            text-transform: uppercase;
+            font-size: 48px;
+            color: rgba(255, 255, 255, 0.51);
+        }
+        &:last-child .title_48 {
+            left: auto;
+            right: 15px;
+            bottom: 40%;
+        }
+        &:nth-child(2) .title_48 {
+            left: auto;
+            right: 13px;
+            bottom: 16px;
+        }
+    }
+    .title_32 {
+        text-align: center;
+    }
+}
