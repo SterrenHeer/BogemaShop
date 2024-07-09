@@ -5,7 +5,7 @@
     padding: 17px;
     border: 2px solid #fcc2d1;
     background: rgba(54, 54, 54, 0.48);
-    transition: box-shadow 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 	text-align: center;
 	font-weight: 600;
     font-size: 24px;
@@ -13,7 +13,7 @@
     cursor: pointer;
     &:hover {
         box-shadow: 0 0 20px 4px rgba(#fcc2d1, 0.5);
-        background: #fcc2d1;
+        background: rgba(#fcc2d1, 0.8);
     }
 	&_card {
         padding: 11px;

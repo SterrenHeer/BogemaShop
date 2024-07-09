@@ -1,0 +1,21 @@
+.promo {
+    position: relative;
+    display: flex;
+    padding-top: 69px;
+    img {
+        width: 50%;
+    }
+    .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 26.92%;
+    }
+    .title_200 {
+        position: absolute;
+        right: 18px;
+        bottom: -24px;
+        color: rgba(255, 255, 255, 0.16);
+    }
+}

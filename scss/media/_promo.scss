@@ -1,0 +1,30 @@
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.promo {
+        padding-top: 60px;
+        img {
+            width: 100%;
+            &:first-child {
+                display: none;
+            }
+        }
+        .button {
+            width: 76.66%;
+        }
+        .title_200 {
+            right: 20px;
+            bottom: 0;
+        }
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}
