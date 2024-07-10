@@ -4,11 +4,12 @@
     &_wrapper {
         display: flex;
         gap: 5.7%;
+        width: calc(100% - 58px);
         padding: 47px 29px;
     }
     &_left {
         display: flex;
-        justify-content: space-between;
+        gap: 4.64%;
         width: 46.49%;
     }
     &_right {
@@ -24,10 +25,11 @@
         }
         .button {
             width: 53.35%;
+            color: #fcc2d1;
         }
     }
     &_image {
-        width: 88.14%;
+        width: calc(100% - 4.64% - 45px);
         &_wrapper {
             position: relative;
             padding: 50% 0;
@@ -60,7 +62,7 @@
             a {
                 display: flex;
                 align-items: center;
-                width: 53.33%;
+                width: 64.44%;
             }
             img {
                 width: 100%;
@@ -86,5 +88,8 @@
     }
     .title {
         color: #fff;
+    }
+    .mobile {
+        display: none;
     }
 }
