@@ -1,10 +1,7 @@
-.delivery {
-    ul {
+.delivery, .product_return {
+    ul, ol {
         margin-top: 20px;
         margin-left: 24px;
-    }
-    .nomt {
-        margin-top: 0;
     }
     .title {
         margin-top: 20px;
@@ -15,10 +12,13 @@
     .title_32 {
         margin-top: 40px;
     }
+    .nomt {
+        margin-top: 0;
+    }
 }
 @media (max-width: 992px) {
-    .delivery {
-        ul {
+    .delivery, .product_return {
+        ul, ol {
             margin-top: 16px;
         }
         .title {
