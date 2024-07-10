@@ -57,3 +57,7 @@ if (document.querySelector('.bestsellers_slide') != null) {
     bestsellers_hearts = document.querySelectorAll('.bestsellers_favorite');
     changeHeartColor(bestsellers_hearts);
 }
+if (document.querySelector('.catalog_item') != null) {
+    catalog_hearts = document.querySelectorAll('.catalog_favorite');
+    changeHeartColor(catalog_hearts);
+}

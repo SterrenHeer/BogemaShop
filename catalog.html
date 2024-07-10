@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header class="header"></header>
+    <div class="hierarhy container">
+        <div class="hierarhy_links">
+            <a href="index.html" class="title semi-bold">Главная</a>
+            <div class="title semi-bold">/ Каталог</div>
+        </div>
+    </div>
+    <section class="catalog">
+        <div class="container">
+            <div class="title title_40">Каталог</div>
+            <div class="catalog_wrapper">
+                <div class="catalog_left">
+
+                </div>
+                <div class="catalog_right">
+                    <div class="catalog_sort">
+                        <div class="catalog_sort_item">
+                            <div class="catalog_sort_type">Сортировать по:</div>
+                            <input type="radio" id="popular" name="sort" checked>
+                            <label for="popular">популярности</label>
+                            <input type="radio" id="price" name="sort">
+                            <label for="price">цене ↓</label>
+                        </div>
+                        <div class="catalog_sort_item">
+                            <div class="catalog_sort_type">Отображать:</div>
+                            <input type="radio" id="all" name="view" checked>
+                            <label for="all">все товары</label>
+                            <input type="radio" id="sale" name="view">
+                            <label for="sale">распродажа</label>
+                        </div>
+                    </div>
+                    <div class="catalog_items">
+                        <div class="catalog_item">
+                            <div class="catalog_item_wrapper">
+                                <div class="catalog_item_image" onclick="location='product.html'">
+                                    <img src="img/products/product_template.png" alt="product">
+                                </div>
+                                <div class="catalog_item_sizes">
+                                    <div class="title title_16 light">42</div>
+                                    <div class="title title_16 light">44</div>
+                                </div>
+                            </div>
+                            <div class="catalog_item_bottom">
+                                <div class="catalog_titles">
+                                    <div class="title title_20 light">Платье ODRI</div>
+                                    <div class="title title_20 bold">449,00 BYN</div>
+                                </div>
+                                <div class="catalog_favorite">
+                                    <img src="icons/heart.svg" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_wrapper">
+                                <div class="catalog_item_image" onclick="location='product.html'">
+                                    <img src="img/products/product_template.png" alt="product">
+                                </div>
+                            </div>
+                            <div class="catalog_item_bottom">
+                                <div class="catalog_titles">
+                                    <div class="title title_20 light">Платье ODRI</div>
+                                    <div class="title title_20 bold">449,00 BYN</div>
+                                </div>
+                                <div class="catalog_favorite">
+                                    <img src="icons/heart.svg" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_wrapper">
+                                <div class="catalog_item_image" onclick="location='product.html'">
+                                    <img src="img/products/product_template.png" alt="product">
+                                </div>
+                                <div class="catalog_item_sizes">
+                                    <div class="title title_16 light">42</div>
+                                    <div class="title title_16 light">44</div>
+                                    <div class="title title_16 light">46</div>
+                                </div>
+                            </div>
+                            <div class="catalog_item_bottom">
+                                <div class="catalog_titles">
+                                    <div class="title title_20 light">Платье ODRI</div>
+                                    <div class="title title_20 bold">449,00 BYN</div>
+                                </div>
+                                <div class="catalog_favorite">
+                                    <img src="icons/heart.svg" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_wrapper">
+                                <div class="catalog_item_image" onclick="location='product.html'">
+                                    <img src="img/products/product_template.png" alt="product">
+                                </div>
+                            </div>
+                            <div class="catalog_item_bottom">
+                                <div class="catalog_titles">
+                                    <div class="title title_20 light">Платье ODRI</div>
+                                    <div class="title title_20 bold">449,00 BYN</div>
+                                </div>
+                                <div class="catalog_favorite">
+                                    <img src="icons/heart.svg" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<footer class="footer"></footer>
+	<div class="tabbar">
+		<a href="index.html"><img src="icons/home.svg" alt="home"></a>
+		<a href="#"><img src="icons/profile.svg" alt="profile"></a>
+		<a href="#"><img src="icons/favourite.svg" alt="favourite"></a>
+		<a href="#"><img src="icons/cart.svg" alt="cart"></a>
+	</div>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
