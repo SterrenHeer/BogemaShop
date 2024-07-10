@@ -13,6 +13,16 @@ body {
 	width: 83.07%;
 	margin: 0 auto;
 }
+.hierarhy {
+	padding-top: 87px;
+	&_links {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		gap: 6px;
+		width: 100%;
+	}
+}
 a {
 	text-decoration: none;
 }
@@ -28,6 +38,7 @@ a {
 @import "blocks/collections";
 @import "blocks/charm";
 @import "blocks/categories";
+@import "blocks/delivery";
 @import "blocks/footer";
 @import "blocks/tabbar";
 @import 'media/general';
