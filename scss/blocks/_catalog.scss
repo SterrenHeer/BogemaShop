@@ -202,6 +202,8 @@
     &_checkbox:checked + &_view &_icon {
         opacity: 1;
     }
+}
+.catalog, .filter {
     .noUi-touch-area {
         position: relative;
         .last {
@@ -243,7 +245,10 @@
         margin: 27px 0 17px 0;
         background: rgba(217, 217, 217, 0.68);
     }  
-    #slider {
-        width: calc(91% - 12px);
+    .range_slider {
+        width: calc(100% - 30px);
     }
+}
+.filter {
+    display: none;
 }
