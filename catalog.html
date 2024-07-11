@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Каталог</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="js/nouislider.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -38,6 +39,49 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="divider"></div>
+                    <div class="catalog_price">
+                        <div class="title title_20">ПО ЦЕНЕ:</div>
+                        <div id="slider"></div>
+                        <button class="button button_card">ПРИМЕНИТЬ</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="catalog_size">
+                        <div class="title title_20">РАЗМЕР</div>
+                        <div class="catalog_sizes">
+                            <label for="catalog_checkbox_1" class="catalog_label title title_20 ">
+                                <input type="checkbox" name="sizes" id="catalog_checkbox_1" class="catalog_checkbox" required checked>
+                                <span class="catalog_view">
+                                    <img class="catalog_icon" src="icons/size_check.svg" alt="check">
+                                </span>42
+                            </label>
+                            <label for="catalog_checkbox_2" class="catalog_label title title_20 ">
+                                <input type="checkbox" name="sizes" id="catalog_checkbox_2" class="catalog_checkbox">
+                                <span class="catalog_view">
+                                    <img class="catalog_icon" src="icons/size_check.svg" alt="check">
+                                </span>44
+                            </label>
+                            <label for="catalog_checkbox_3" class="catalog_label title title_20 ">
+                                <input type="checkbox" name="sizes" id="catalog_checkbox_3" class="catalog_checkbox">
+                                <span class="catalog_view">
+                                    <img class="catalog_icon" src="icons/size_check.svg" alt="check">
+                                </span>46
+                            </label>
+                            <label for="catalog_checkbox_4" class="catalog_label title title_20 ">
+                                <input type="checkbox" name="sizes" id="catalog_checkbox_4" class="catalog_checkbox">
+                                <span class="catalog_view">
+                                    <img class="catalog_icon" src="icons/size_check.svg" alt="check">
+                                </span>48
+                            </label>
+                            <label for="catalog_checkbox_5" class="catalog_label title title_20 ">
+                                <input type="checkbox" name="sizes" id="catalog_checkbox_5" class="catalog_checkbox">
+                                <span class="catalog_view">
+                                    <img class="catalog_icon" src="icons/size_check.svg" alt="check">
+                                </span>50
+                            </label>
+                        </div>
+                        <button class="button button_card">ПРИМЕНИТЬ</button>
+                    </div>
                 </div>
                 <div class="catalog_right">
                     <div class="catalog_sort">
@@ -143,6 +187,7 @@
 		<a href="#"><img src="icons/cart.svg" alt="cart"></a>
 	</div>
 	<script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/nouislider.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
