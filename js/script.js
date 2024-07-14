@@ -22,6 +22,12 @@ if (document.querySelector('.catalog') != null) {
     });
 }
 
+if (document.querySelector('.product') != null) {
+    $('.product_ruler, .product_table_close').click(() => {
+        $('.product_table').toggleClass('show');
+    });
+}
+
 const changeHeartColor = (hearts) => {
     hearts.forEach(favorite => {
         favorite.addEventListener('click', (e) => {
