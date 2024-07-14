@@ -7,6 +7,7 @@
 @import "charm";
 @import "categories";
 @import "catalog";
+@import "product";
 @import "footer";
 
 .hide {
@@ -29,5 +30,11 @@
 	}
 	.hierarhy {
 		padding-top: 77px;
+		&_links {
+			flex-wrap: wrap;
+			* {
+				text-wrap: nowrap;
+			}
+		}
 	}
 }

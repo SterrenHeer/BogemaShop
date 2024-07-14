@@ -67,6 +67,19 @@ if (document.querySelector('.bestsellers_container.slider_2') != null) {
         swipe: true,
     });
 }
+if (document.querySelector('.product_slider_field') != null) {
+    let sliders = document.querySelectorAll('.product_slider');
+    sliders.forEach((item, index) => {
+        slider({
+            containerSelector: `.product_slider.slider_${index}`,
+            slideSelector: '.product_slider_image',
+            wrapperSelector: '.product_slider_wrapper',
+            fieldSelector: '.product_slider_field',
+            indicatorsClass: `product_slider_indicators`,
+            swipe: true,
+        });
+    })
+}
 
 if (document.querySelector('.product_tab') != null) {
     tabs('.product_wrapper', '.product_color', '.product_tab', '.product_colors', 'product_tab_active');

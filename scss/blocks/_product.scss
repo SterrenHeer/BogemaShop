@@ -89,6 +89,9 @@
     &_favorite {
         cursor: pointer;
     }
+    &_slider {
+        display: none;
+    }
     &_table {
         position: absolute;
         top: 90px;
