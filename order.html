@@ -32,7 +32,7 @@
                     <div class="cart_order_delivery">
                         <div class="title regular">СПОСОБЫ ДОСТАВКИ</div>
                         <label for="order_checkbox_1" class="cart_label title title_20">
-                            <input type="radio" name="items" id="order_checkbox_1" class="cart_order_checkbox" required>
+                            <input type="radio" name="delivery" id="order_checkbox_1" class="cart_order_checkbox"value="САМОВЫВОЗ ИЗ МАГАЗИНА" required>
                             <span class="cart_order_view">
                                 <div>
                                     <div class="title title_14">САМОВЫВОЗ ИЗ МАГАЗИНА</div>
@@ -42,7 +42,7 @@
                             </span>
                         </label>
                         <label for="order_checkbox_2" class="cart_label title title_20">
-                            <input type="radio" name="items" id="order_checkbox_2" class="cart_order_checkbox" required>
+                            <input type="radio" name="delivery" id="order_checkbox_2" class="cart_order_checkbox" value="Доставка ЕВРОПОЧТОЙ" required>
                             <span class="cart_order_view">
                                 <div>
                                     <div class="title title_14">Доставка ЕВРОПОЧТОЙ</div>
@@ -51,7 +51,7 @@
                             </span>
                         </label>
                         <label for="order_checkbox_3" class="cart_label title title_20">
-                            <input type="radio" name="items" id="order_checkbox_3" class="cart_order_checkbox" required>
+                            <input type="radio" name="delivery" id="order_checkbox_3" class="cart_order_checkbox" value="Доставка БЕЛПОЧТОЙ" required>
                             <span class="cart_order_view">
                                 <div>
                                     <div class="title title_14">Доставка БЕЛПОЧТОЙ</div>
@@ -61,11 +61,17 @@
                         </label>
                     </div>
                     <div class="cart_order_recipient">
+                        <input type="hidden" name="theme" value="Форма заказа">
+                        <input type="hidden" name="utm_source" class="utm_source" value="">
+                        <input type="hidden" name="utm_medium" class="utm_medium" value="">
+                        <input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+                        <input type="hidden" name="utm_content" class="utm_content" value="">
+                        <input type="hidden" name="utm_term" class="utm_term" value="">
                         <input type="text" name="name" placeholder="Введите имя" required>
                         <input type="text" name="phone" placeholder="Введите номер телефона" required>
                         <input type="text" name="address" class="wide" placeholder="Введите адрес" required>
                         <label for="order_checkbox_4" class="cart_label title title_20">
-                            <input type="checkbox" name="confirmation" id="order_checkbox_4" class="cart_order_checkbox2 none" required>
+                            <input type="checkbox" name="confirmation" id="order_checkbox_4" class="cart_order_checkbox2 none">
                             <span class="cart_order_view2">
                                 <div></div>
                             </span>

@@ -13,6 +13,21 @@ $.get('footer.html',function(response){
     $('.footer').html(response); 
 });
 
+$('input[name="phone"]').mask("+375 (99) 999-99-99");
+
+// let baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+// let newUrl = baseUrl + '?utm_source=yandex&utm_medium=cpc&utm_campaign=%7Bcampaign_name_lat%7D&utm_content=%7Bad_id%7D&utm_term=%7Bkeyword%7D';
+// history.pushState(null, null, newUrl);
+
+let utms_names = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_city'];
+
+utms_names.forEach(name => {
+    let utm_inputs = document.querySelectorAll(`.${name}`);
+    utm_inputs.forEach(input => {
+        input.value = new URL(window.location.href).searchParams.get(`${name}`);
+    });
+});   
+
 if (document.querySelector('.catalog') != null) {
     $('.filter_button, .filter_close, .filter a').click(() => {
         $('.filter').toggleClass('show');
@@ -129,5 +144,33 @@ if (document.querySelector('.range_slider') != null) {
                 btn.querySelector('.catalog_range_value').innerHTML = parseFloat(range.noUiSlider.get()[index]).toFixed(2);
             });
         });
+    });
+}
+
+$("form").submit(function (event) {
+    event.preventDefault();
+    let name = event.target.classList.value.split(' ').pop().slice(0, -5);
+    let formData = new FormData(document.querySelector(`.${name}_form`));
+    for (key of formData.keys()) {
+        console.log(`${key}: ${formData.get(key)}`);
+      }
+    sendPhp(name, formData);
+});
+
+function sendPhp(name, data) {
+    $.ajax({
+        url: `./php/send_${name}.php`,
+        type: 'POST',
+        cache: false,
+        data: data,
+        dataType: 'html',
+        processData: false,
+        contentType: false,
+        success: function (data) {
+            $(`.${name}_form`).trigger('reset');
+            if (name == 'order') {
+                location="order_completion.html"
+            }
+        }
     });
 }

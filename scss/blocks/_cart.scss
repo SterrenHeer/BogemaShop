@@ -225,4 +225,15 @@
         margin-top: 12px;
         cursor: pointer;
     }
+    .complete {
+        margin-top: 27px;
+        &:last-child {
+            margin-top: 53px;
+        }
+        a {
+            font-weight: 400;
+            text-decoration: underline;
+            color: #000;
+        }
+    }
 }
