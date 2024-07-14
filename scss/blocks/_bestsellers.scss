@@ -75,6 +75,9 @@
     &_next {
         right: 28px;
     }
+    &_favorite {
+        cursor: pointer;
+    }
     .rotate {
         transform: rotate(180deg);
     }

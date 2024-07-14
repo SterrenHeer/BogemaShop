@@ -62,6 +62,10 @@ if (document.querySelector('.bestsellers_container.slider_2') != null) {
     });
 }
 
+if (document.querySelector('.product_tab') != null) {
+    tabs('.product_wrapper', '.product_color', '.product_tab', '.product_colors', 'product_tab_active');
+}
+
 if (document.querySelector('.bestsellers_slide') != null) {
     bestsellers_hearts = document.querySelectorAll('.bestsellers_favorite');
     changeHeartColor(bestsellers_hearts);
@@ -69,6 +73,10 @@ if (document.querySelector('.bestsellers_slide') != null) {
 if (document.querySelector('.catalog_item') != null) {
     catalog_hearts = document.querySelectorAll('.catalog_favorite');
     changeHeartColor(catalog_hearts);
+}
+if (document.querySelector('.product_favorite') != null) {
+    product_hearts = document.querySelectorAll('.product_favorite');
+    changeHeartColor(product_hearts);
 }
 
 if (document.querySelector('.range_slider') != null) {
