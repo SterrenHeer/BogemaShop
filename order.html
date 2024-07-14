@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Оформление заказа</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header class="header"></header>
+    <div class="hierarhy container">
+        <div class="hierarhy_links">
+            <a href="index.html" class="title semi-bold">Главная</a>
+            <div class="title semi-bold">/ Оформление заказа</div>
+        </div>
+    </div>
+    <section class="cart">
+        <div class="container">
+            <div class="title title_40 light">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+            <div class="cart_pages">
+                <div class="cart_page title title_14 mont semi-bold active">
+                    <img src="icons/check_white.svg" alt="check">
+                </div>
+                <div class="cart_page title title_14 mont semi-bold active">2</div>
+                <div class="cart_page title title_14 mont semi-bold">3</div>
+                <div class="line"></div>
+            </div>
+            <form class="cart_wrapper order_form">
+                <div class="cart_order">
+                    <div class="title regular">НАСЕЛЕННЫЙ ПУНКТ</div>
+                    <input type="text" name="city" placeholder="Введите название города" required>
+                    <div class="cart_order_delivery">
+                        <div class="title regular">СПОСОБЫ ДОСТАВКИ</div>
+                        <label for="order_checkbox_1" class="cart_label title title_20">
+                            <input type="radio" name="items" id="order_checkbox_1" class="cart_order_checkbox" required>
+                            <span class="cart_order_view">
+                                <div>
+                                    <div class="title title_14">САМОВЫВОЗ ИЗ МАГАЗИНА</div>
+                                    <div class="cart_order_free">бесплатно</div>
+                                </div>
+                                <div class="title title_14 medium upper under">выбрать магазин</div>
+                            </span>
+                        </label>
+                        <label for="order_checkbox_2" class="cart_label title title_20">
+                            <input type="radio" name="items" id="order_checkbox_2" class="cart_order_checkbox" required>
+                            <span class="cart_order_view">
+                                <div>
+                                    <div class="title title_14">Доставка ЕВРОПОЧТОЙ</div>
+                                    <div class="cart_order_free">бесплатно</div>
+                                </div>
+                            </span>
+                        </label>
+                        <label for="order_checkbox_3" class="cart_label title title_20">
+                            <input type="radio" name="items" id="order_checkbox_3" class="cart_order_checkbox" required>
+                            <span class="cart_order_view">
+                                <div>
+                                    <div class="title title_14">Доставка БЕЛПОЧТОЙ</div>
+                                    <div class="cart_order_free">бесплатно</div>
+                                </div>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="cart_order_recipient">
+                        <input type="text" name="name" placeholder="Введите имя" required>
+                        <input type="text" name="phone" placeholder="Введите номер телефона" required>
+                        <input type="text" name="address" class="wide" placeholder="Введите адрес" required>
+                        <label for="order_checkbox_4" class="cart_label title title_20">
+                            <input type="checkbox" name="confirmation" id="order_checkbox_4" class="cart_order_checkbox2 none" required>
+                            <span class="cart_order_view2">
+                                <div></div>
+                            </span>
+                            <div class="title title_14 regular">Позвонить мне для подтверждения заказа</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="cart_total">
+                    <div class="title semi-bold mont">ВАШ ЗАКАЗ</div>
+                    <div class="cart_total_row">
+                        <div class="title title_14 regular mont">Товары: 2 шт.</div>
+                        <div class="title bold">449,00 BYN</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="cart_total_row">
+                        <div class="title semi-bold mont">ИТОГО</div>
+                        <div class="title title_20 bold">449,00 BYN</div>
+                    </div>
+                    <button type="submit" class="button button_card">ОФОРМИТЬ ЗАКАЗ</button>
+                </div>
+            </form>
+        </div>
+    </section>
+	<footer class="footer"></footer>
+	<div class="tabbar">
+		<a href="index.html"><img src="icons/home.svg" alt="home"></a>
+		<a href="profile.html"><img src="icons/profile.svg" alt="profile"></a>
+		<a href="favourite.html"><img src="icons/favourite.svg" alt="favourite"></a>
+		<a href="cart.html" class="active"><img src="icons/cart.svg" alt="cart"></a>
+	</div>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

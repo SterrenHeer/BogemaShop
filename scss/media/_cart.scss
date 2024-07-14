@@ -47,6 +47,32 @@
                 margin-top: 34px;
             }
         }
+        &_order {
+            width: 100%;
+            &_delivery {
+                gap: 15px;
+                margin-top: 33px;
+            }
+            &_recipient {
+                flex-wrap: wrap;
+                gap: 20px 0;
+                .wide {
+                    width: 87.17%;
+                }
+                .cart_label {
+                    gap: 14px;
+                }
+            }
+            &_view {
+                flex-direction: column;
+                align-items: start;
+                gap: 19px;
+            }
+            input {
+                margin-top: 26px;
+                width: 87.17%;
+            }
+        }
         &_pages {
             margin: 32px auto 0 auto;
             width: 72.75%;

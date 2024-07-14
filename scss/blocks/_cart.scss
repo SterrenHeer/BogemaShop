@@ -74,6 +74,94 @@
             width: 100%;
         }
     }
+    &_order {
+        width: 48.96%;
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+        &_delivery {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            margin-top: 30px;
+        }
+        &_recipient {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px 0;
+            .wide {
+                width: 100%;
+            }
+            .cart_label {
+                align-items: center;
+                gap: 15px;
+            }
+        }
+        &_free {
+            margin-top: 6px;
+            font-weight: 300;
+            font-size: 14px;
+            color: rgba(126, 126, 126, 0.79);
+        }
+        &_checkbox, &_checkbox2 {
+            position: absolute;
+            z-index: -1;
+        }
+        &_view {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(100% - 26px);
+            padding: 13px;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+            transition: .3s;
+        }
+        &_view2 {
+            display: flex;
+            align-items: center;
+            width: 60px;
+            padding: 3px;
+            border: none;
+            border-radius: 20px;
+            background: #d9d9d9;
+            transition: .3s;
+            div {
+                width: 22px;
+                height: 22px;
+                border-radius: 100%;
+                background: #fff;
+            }
+        }
+        &_checkbox:checked + &_view {
+            border: 1px solid #1a1818;
+        }
+        &_checkbox2:checked + &_view2 {
+            justify-content: end;
+            background: #fcc2d1;
+        }
+        input {
+            margin-top: 20px;
+            width: 47.83%;
+            padding: 6px 0;
+            border: none;
+            border-bottom: 1px solid rgba(217, 217, 217, 0.68);;
+            font-weight: 400;
+            font-size: 14px;
+            color: #7e7e7e;
+            background: none;
+            outline: none;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 14px;
+                color: #7e7e7e;
+            }
+        }
+        input.none {
+            height: 1px;
+        }
+    }
     &_pages {
         position: relative;
         display: flex;
