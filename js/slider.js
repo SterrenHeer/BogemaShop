@@ -108,13 +108,13 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
             field.append(templates[i + 1].cloneNode(true));
         }
 
-        let slidesNew = document.querySelectorAll(slideSelector);
+        let slidesNew = container.querySelectorAll(slideSelector);
         slidesNew.forEach((slide, index) => {
             slide.style.width = width;
         });
         
         if (indicatorsClass) {
-            let dots = document.querySelectorAll(`.${mainClass}_dot`);
+            let dots = container.querySelectorAll(`.${mainClass}_dot`);
             dots.forEach((dot) => {
                 mobile ? dot.style.width = 100 / slides.length + '%' : dot.style.width = '';
             });
