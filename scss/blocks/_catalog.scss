@@ -67,6 +67,33 @@
                 }
             }
         }
+        &:hover &_delete {
+            opacity: 1;
+        }
+        &:hover &_wrapper.fav {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            background: #fff;
+        }
+        &_wrapper.fav {
+            padding-top: 38px;
+            transition: 0.8s;
+        }
+        &_delete {
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            height: 38px;
+            opacity: 0;
+            transition: 0.8s;
+            cursor: pointer;
+            .title {
+                color: #7e7e7e;
+            }
+        }
     }
     &_sort {
         display: flex;
@@ -254,4 +281,26 @@
 }
 .filter {
     display: none;
+}
+.favourite {
+    margin-top: 50px;
+    &_clear {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: fit-content;
+        padding: 12px 24px;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .title_40 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .catalog_items {
+        margin-top: 46px;
+    }
 }

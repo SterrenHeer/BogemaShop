@@ -54,14 +54,16 @@
     }
 }
 @media (max-width: 768px) {
-
+    .bestsellers {
+        &_favorite img {
+            width: 20px;
+        }
+    }
 }
 @media (max-width: 480px) {
     .bestsellers {
-        &_favorite {
-            img {
-                width: 16px;
-            }
+        &_favorite img {
+            width: 16px;
         }
     }
 }
