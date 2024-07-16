@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Панель управления</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header class="header"></header>
+    <div class="hierarhy container">
+        <div class="hierarhy_links">
+            <a href="index.html" class="title semi-bold">Главная</a>
+            <div class="title semi-bold">/ Мой профиль</div>
+        </div>
+    </div>
+    <section class="profile">
+        <div class="container">
+            <div class="title title_40 start">МОЙ ПРОФИЛЬ</div>
+            <div class="profile_wrapper">
+                <div class="profile_menu">
+                    <a href="profile.html" class="title title_20 active">ПАНЕЛЬ УПРАВЛЕНИЯ</a>
+                    <a href="order_history.html" class="title title_20">ИСТОРИЯ ЗАКАЗОВ</a>
+                    <a href="profile_addresses.html" class="title title_20">АДРЕСА</a>
+                    <a href="profile_data.html" class="title title_20">АНКЕТА</a>
+                    <a href="favourite.html" class="title title_20">ИЗБРАННОЕ</a>
+                    <a href="#" class="title title_20"></a>
+                </div>
+                <div class="profile_content">
+                    <div class="title title_20">Добро пожаловать, <span class="profile_name">ИМЯ ПРОФИЛЯ</span>!</div>
+                    <div class="title">Из главной страницы аккаунта вы можете посмотреть ваши <a href="order_history.html">недавние заказы</a>, настроить <a href="profile_addresses.html">платежный адрес и адрес доставки</a>, а также <a href="profile_data.html">изменить пароль и основную информацию</a>.</div>
+                    <div class="profile_panel">
+                        <a href="order_history.html">
+                            <img src="icons/profile_history.svg" alt="history">
+                            <div class="title title_20">ИСТОРИЯ ЗАКАЗОВ</div>
+                        </a>
+                        <a href="profile_addresses.html">
+                            <img src="icons/profile_map.svg" alt="map">
+                            <div class="title title_20">АДРЕСА</div>
+                        </a>
+                        <a href="profile_data.html">
+                            <img src="icons/profile_data.svg" alt="data">
+                            <div class="title title_20">АНКЕТА</div>
+                        </a>
+                        <a href="favourite.html">
+                            <img src="icons/profile_heart.svg" alt="favourite">
+                            <div class="title title_20">ИЗБРАННОЕ</div>
+                        </a>
+                        <a href="#">
+                            <img src="icons/profile_exit.svg" alt="exit">
+                            <div class="title title_20">ВЫХОД</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<footer class="footer"></footer>
+	<div class="tabbar">
+        <a href="index.html"><img src="icons/home.svg" alt="home"></a>
+		<a href="profile.html" class="active"><img src="icons/profile.svg" alt="profile"></a>
+		<a href="favourite.html"><img src="icons/favourite.svg" alt="favourite"></a>
+		<a href="cart.html"><img src="icons/cart.svg" alt="cart"></a>
+	</div>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
