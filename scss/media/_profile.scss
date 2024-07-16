@@ -80,6 +80,13 @@
                 margin-top: 0;
             }
         }
+        &_form {
+            margin-top: 31px;
+            width: 100%;
+            .button {
+                width: 100%;
+            }
+        }
         .subtitle {
             display: block;
             margin-top: 33px;

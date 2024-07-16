@@ -151,10 +151,12 @@ $("form").submit(function (event) {
     event.preventDefault();
     let name = event.target.classList.value.split(' ').pop().slice(0, -5);
     let formData = new FormData(document.querySelector(`.${name}_form`));
-    for (key of formData.keys()) {
-        console.log(`${key}: ${formData.get(key)}`);
-      }
-    sendPhp(name, formData);
+    // for (key of formData.keys()) {
+    //     console.log(`${key}: ${formData.get(key)}`);
+    // }
+    if (!name.includes('profile')) {
+        sendPhp(name, formData);
+    }
 });
 
 function sendPhp(name, data) {
