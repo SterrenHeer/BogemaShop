@@ -77,7 +77,6 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 21px;
         width: 65.74%;
         &_input {
             padding: 12px;
@@ -93,6 +92,13 @@
                 color: #7e7e7e;
             }
         }
+        &_doubles {
+            display: flex;
+            justify-content: space-between;
+            label {
+                width: 47.88%;
+            }
+        }
         label {
             display: flex;
             flex-direction: column;
@@ -105,6 +111,12 @@
             margin-top: 11px;
             width: 66%;
         }
+        .medium.upper {
+            margin-top: 13px;
+        }
+    }
+    &_form.first {
+        margin-top: 21px;
     }
     .subtitle {
         display: none;

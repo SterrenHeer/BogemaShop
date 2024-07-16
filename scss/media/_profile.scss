@@ -13,7 +13,13 @@
     }
 }
 @media (max-width: 1200px) {
-
+    .profile {
+        &_form {
+            .button {
+                width: 70%;
+            }
+        }
+    }
 }
 @media (max-width: 992px) {
 	.profile {
@@ -21,7 +27,7 @@
         &_wrapper {
             flex-direction: column;
             gap: 59px;
-            margin-top: 30px;
+            margin-top: 17px;
         }
         &_menu {
             order: 1;
@@ -81,11 +87,23 @@
             }
         }
         &_form {
-            margin-top: 31px;
             width: 100%;
+            &_doubles {
+                flex-direction: column;
+                gap: 20px;
+                label {
+                    width: 100%;
+                }
+            }
             .button {
                 width: 100%;
             }
+            .medium.upper {
+                margin-top: 16px;
+            }
+        }
+        &_form.first {
+            margin-top: 31px;
         }
         .subtitle {
             display: block;

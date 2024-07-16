@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header class="header"></header>
+    <div class="hierarhy container">
+        <div class="hierarhy_links">
+            <a href="index.html" class="title semi-bold">Главная</a>
+            <div class="title semi-bold">/ Мой профиль</div>
+        </div>
+    </div>
+    <section class="profile">
+        <div class="container">
+            <div class="title title_40 start">МОЙ ПРОФИЛЬ</div>
+            <div class="title_20 medium subtitle">Анкета</div>
+            <div class="profile_wrapper">
+                <div class="profile_menu">
+                    <a href="profile.html" class="title title_20">ПАНЕЛЬ УПРАВЛЕНИЯ</a>
+                    <a href="order_history.html" class="title title_20">ИСТОРИЯ ЗАКАЗОВ</a>
+                    <a href="profile_addresses.html" class="title title_20">АДРЕСА</a>
+                    <a href="profile_data.html" class="title title_20 active">АНКЕТА</a>
+                    <a href="favourite.html" class="title title_20">ИЗБРАННОЕ</a>
+                    <a href="#" class="title title_20">ВЫХОД</a>
+                </div>
+                <div class="profile_content">
+                    <form class="profile_form">
+                        <div class="profile_form_doubles">
+                            <label for="name">
+                                <div class="title title_14">Имя <span>*</span></div>
+                                <input type="text" name="name" id="name" class="profile_form_input" required>
+                            </label>
+                            <label for="surname">
+                                <div class="title title_14">Фамилия <span>*</span></div>
+                                <input type="text" name="surname" id="surname" class="profile_form_input" required>
+                            </label>
+                        </div>
+                        <label for="login">
+                            <div class="title title_14">Отображаемое имя <span>*</span></div>
+                            <input type="text" name="login" id="login" class="profile_form_input" required>
+                        </label>
+                        <label for="email">
+                            <div class="title title_14">E-mail <span>*</span></div>
+                            <input type="email" name="email" id="email" class="profile_form_input" required>
+                        </label>
+                        <div class="title medium upper">Смена пароля</div>
+                        <label for="old_pass">
+                            <div class="title title_14">Действующий пароль (не заполняйте, чтобы оставить прежний)</div>
+                            <input type="text" name="old_pass" id="old_pass" class="profile_form_input">
+                        </label>
+                        <label for="new_pass">
+                            <div class="title title_14">Новый пароль (не заполняйте, чтобы оставить прежний)</div>
+                            <input type="text" name="new_pass" id="new_pass" class="profile_form_input">
+                        </label>
+                        <label for="conf_pass">
+                            <div class="title title_14">Подтвердите новый пароль</div>
+                            <input type="text" name="conf_pass" id="conf_pass" class="profile_form_input">
+                        </label>
+                        <button type="submit" class="button button_card">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+	<footer class="footer"></footer>
+	<div class="tabbar">
+        <a href="index.html"><img src="icons/home.svg" alt="home"></a>
+		<a href="profile.html" class="active"><img src="icons/profile.svg" alt="profile"></a>
+		<a href="favourite.html"><img src="icons/favourite.svg" alt="favourite"></a>
+		<a href="cart.html"><img src="icons/cart.svg" alt="cart"></a>
+	</div>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
