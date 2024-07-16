@@ -47,4 +47,33 @@
             }
         }
     }
+    &_order {
+        margin-top: 19px;
+        width: 73.14%;
+        &_content {
+            display: flex;
+            gap: 3.32%;
+            margin-top: 16px;
+            img {
+                width: 23.57%;
+                object-fit: cover;
+            }
+        }
+        &_descr {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 73.1%;
+        }
+        &_params {
+            display: flex;
+            justify-content: space-between;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .subtitle {
+        display: none;
+    }
 }
