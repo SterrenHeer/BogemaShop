@@ -154,7 +154,7 @@ $("form").submit(function (event) {
     // for (key of formData.keys()) {
     //     console.log(`${key}: ${formData.get(key)}`);
     // }
-    if (!name.includes('profile')) {
+    if (!name.includes('profile') && !name.includes('contacts')) {
         sendPhp(name, formData);
     }
 });
