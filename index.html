@@ -331,6 +331,60 @@
 			</div>
 		</div>
 	</section>
+	<div class="login">
+		<div class="login_modal">
+			<div class="login_close"><img data-close src="icons/modal_close.svg" alt="close"></div>
+			<div class="login_content">
+				<div class="title title_24 semi-bold">ВОЙТИ</div>
+				<div class="divider"></div>
+				<form class="login_form" action="#">
+					<label for="login">
+						<div class="title regular">Имя пользователя или номер телефона*</div>
+						<input type="text" name="login" id="login" class="login_form_input" required>
+					</label>
+					<label for="password">
+						<div class="title regular">Пароль*</div>
+						<input type="text" name="password" id="password" class="login_form_input" required>
+					</label>
+					<button type="submit" class="button button_card">ВОЙТИ</button>
+					<div class="login_form_bottom">
+						<label for="login_checkbox" class="login_label">
+							<input type="checkbox" name="remember" id="login_checkbox" class="login_checkbox" required checked>
+							<span class="login_view">
+								<div class="login_icon">
+									<img src="icons/size_check.svg" alt="policy">
+								</div>
+							</span>
+							<div class="title regular">Запомнить меня</div>
+						</label>
+						<div class="login_reset title regular">Потеряли Ваш пароль?</div>
+					</div>
+				</form>
+				<div class="divider"></div>
+				<div class="login_bottom">
+					<img src="icons/profile_login.svg" alt="profile">
+					<div class="title title_20 semi-bold">Еще нет учетной записи?</div>
+					<div class="title title_20 semi-bold under" data-registration onclick="closeModal('.login')">СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="registration">
+		<div class="registration_modal">
+			<div class="registration_close"><img data-close src="icons/modal_close.svg" alt="close"></div>
+			<div class="registration_content">
+				<div class="title title_36 semi-bold">РЕГИСТРАЦИЯ</div>
+				<form class="registration_form" action="#">
+					<div class="title title_24">Введите номер</div>
+					<label for="phone">
+						<div class="title regular">Номер телефона</div>
+						<input type="text" name="phone" id="phone" class="registration_form_input" required>
+					</label>
+					<button type="submit" class="button button_card">ВОЙТИ</button>
+				</form>
+			</div>
+		</div>
+	</div>
 	<footer class="footer"></footer>
 	<div class="tabbar">
 		<a href="index.html" class="active"><img src="icons/home.svg" alt="home"></a>

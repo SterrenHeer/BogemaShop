@@ -8,6 +8,12 @@ $.get('header.html',function(response){
         $('.burger').removeClass("show")
         $('.burger_dropdown :checked').prop('checked', false);
     });
+    if (document.querySelector('.login') != null) {
+        modal('[data-login]', 'data-close', '.login');
+    }
+    if (document.querySelector('.registration') != null) {
+        modal('[data-registration]', 'data-close', '.registration');
+    }
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response); 
@@ -27,6 +33,40 @@ utms_names.forEach(name => {
         input.value = new URL(window.location.href).searchParams.get(`${name}`);
     });
 });   
+
+function openModal(modalSelector) {
+    const modal = document.querySelector(modalSelector);
+    modal.classList.add('show');
+    modal.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalSelector) {
+    const modal = document.querySelector(modalSelector);
+    modal.classList.add('hide');
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+}
+
+function modal(triggerSelector, closeSelector, modalSelector) {
+    const modalTrigger = document.querySelectorAll(triggerSelector),
+        modal = document.querySelector(modalSelector);
+    modalTrigger.forEach(btn => {
+        btn.addEventListener('click', () => openModal(modalSelector));
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target.getAttribute(closeSelector) == '') {
+            closeModal(modalSelector);
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" && modal.classList.contains('show')) { 
+            closeModal(modalSelector);
+        }
+    });
+}
 
 if (document.querySelector('.catalog') != null) {
     $('.filter_button, .filter_close, .filter a').click(() => {
@@ -154,7 +194,7 @@ $("form").submit(function (event) {
     // for (key of formData.keys()) {
     //     console.log(`${key}: ${formData.get(key)}`);
     // }
-    if (!name.includes('profile') && !name.includes('contacts')) {
+    if (name.includes('order')) {
         sendPhp(name, formData);
     }
 });
